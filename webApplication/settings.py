@@ -31,7 +31,7 @@ SESSION_COOKIE_AGE =  3000
 SESSION_SAVE_EVERY_REQUEST = True
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['djangowebapplication.herokuapp.com', '127.0.0.1:8000']
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
@@ -125,6 +125,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/dev/howto/static-files/
